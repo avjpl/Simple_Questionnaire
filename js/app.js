@@ -31,9 +31,9 @@ function render(idx) {
 render(idx);
 
 eventUtil.addEvent(docBody, 'click', function(evt) {
-    if (evt.target.tagName === 'INPUT') {
+    if (eventUtil.getTarget(evt).tagName === 'INPUT') {
 
-        user.setAnswer(evt.target.value);
+        user.setAnswer(eventUtil.getTarget(evt).value);
 
         if (allQuestions[idx].isCorrect(user)) {
             user.currentScorce += 1;
@@ -42,7 +42,7 @@ eventUtil.addEvent(docBody, 'click', function(evt) {
 });
 
 eventUtil.addEvent(docBody, 'click', function(evt) {
-    if (evt.target.tagName !== 'BUTTON') {
+    if (eventUtil.getTarget(evt).tagName !== 'BUTTON') {
         return;
     }
 

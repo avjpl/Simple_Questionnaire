@@ -15,7 +15,7 @@ var User = (function() {
         showScores: function() {
             var scores = this.quizScores.length > 0 ? this.quizScores.join(",") : 'No Scores Yet';
 
-            return '<p>' + this.name + " your score: " + scores + '</p>';
+            return '<p>' + this.name + " you scored: " + scores + '</p>';
         },
 
         getAnswer: function() {

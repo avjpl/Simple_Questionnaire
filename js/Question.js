@@ -1,5 +1,3 @@
-
-
 var Quiz = (function() {
     /**
      * @param string theQuestion
