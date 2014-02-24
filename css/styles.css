@@ -1,0 +1,41 @@
+#questionContainer {
+    overflow: hidden;
+    width: 500px;
+    border: 2px solid #CCC;
+    margin: 100px auto 0 auto;
+    padding: 1px 50px 20px;
+}
+
+#questionContainer h1 {
+    margin: 20px -50px 0 -50px;
+    padding: 4px 0;
+    font-weight: normal;
+    text-align: center;
+    background-color: #ccc;
+}
+
+#questionContainer h2 {
+    margin-top: 10px;
+    font-size: 1.211em;
+    font-weight: normal;
+    text-align: center;
+}
+
+#questionContainer ul {
+    list-style: none;
+}
+
+#questionContainer input {
+    margin: 0 8px 4px 0;
+}
+
+#questionContainer button {
+    float: right;
+    border: none;
+    padding: 7px 14px;
+}
+
+#questionContainer button:hover {
+    background-color: #999;
+    color: #fff;
+}
